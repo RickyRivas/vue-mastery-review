@@ -1,3 +1,13 @@
+
+// vue.config.js
 module.exports = {
-  lintOnSave: false
+  lintOnSave: false,
+  css: {
+    loaderOptions: {
+      scss: {
+        additionalData: `@import "@/scss/global.scss";`
+      },
+
+    }
+  }
 }
